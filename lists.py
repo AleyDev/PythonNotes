@@ -5,6 +5,7 @@
 # Listeler, sıralı ve değiştirilebilir (mutable) veri tipleridir. Farklı veri tiplerini bir arada barındırabilirler.
 # Listeler, köşeli parantez [] kullanılarak tanımlanır.
 
+
 # Python'da Liste Tanımlama
 liste1 = [1, 2, 3, 4, 5]  # Tam sayılardan oluşan bir liste
 liste2 = ["ananas", "mango", "kivi"]  # Metinlerden (string) oluşan bir liste
