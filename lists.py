@@ -38,6 +38,28 @@ print("String'i Virgüle Göre Bölünmüş Hali:", result)
 
 
 
+# Sayılardan oluşan bir liste
+sayilar = [4, 2, 9, 1, 5, 6]
+
+# Listedeki maksimum elemanı bulma
+max_sayi = max(sayilar)
+print("Maksimum Sayı:", max_sayi)
+
+# Listedeki minimum elemanı bulma
+min_sayi = min(sayilar)
+print("Minimum Sayı:", min_sayi)
+
+# Stringlerden oluşan bir liste
+meyveler = ["muz", "çilek", "karpuz"]
+
+# Alfabetik olarak en büyük ve en küçük elemanı bulma
+max_meyve = max(meyveler)
+min_meyve = min(meyveler)
+print("Alfabetik Olarak Maksimum Meyve:", max_meyve)
+print("Alfabetik Olarak Minimum Meyve:", min_meyve)
+
+
+
 # Liste Elemanlarına Erişim
 # Listeler sıralı olduğundan, her bir elemana indeks ile erişebiliriz. İndeksler 0'dan başlar.
 ilk_eleman = liste1[0]  # İlk eleman
