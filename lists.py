@@ -19,9 +19,14 @@ print("Boş Liste:", liste4)
 
 
 
-# Stringi Listeye Dönüştürme
+# Stringi Listeye Dönüştürme -1:  Harf harf yazdırır
 string = "Python"
 string_to_list = list(string)
+print("String'den Listeye Dönüştürülmüş Hali:", string_to_list)
+
+# Stringi Listeye Dönüştürme - 2: İfadeyi liste içerisinde yazdırır
+string = "Python"
+string_to_list = [string]
 print("String'den Listeye Dönüştürülmüş Hali:", string_to_list)
 
 
