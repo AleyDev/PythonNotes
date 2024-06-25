@@ -146,14 +146,14 @@ print("Sıralanmış Liste2:", sorted_liste)
 
 
 # Listelerde Eleman Sayısını Sayma (count)
-meyve_sayisi = meyveler.count("elma")
-print("Elma Sayısı:", meyve_sayisi)
+meyve_sayisi = meyveler.count("ananas")
+print("Ananas Sayısı:", meyve_sayisi)
 
 
 
 # Bir Elemanın İlk İndeksini Bulma (index)
-elma_indeksi = meyveler.index("elma")
-print("Elma'nın İlk İndeksi:", elma_indeksi)
+ananas_indeksi = meyveler.index("ananas")
+print("Ananas'nın İlk İndeksi:", ananas_indeksi)
 
 
 
