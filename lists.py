@@ -3,6 +3,7 @@
 # Liste Nedir?
 # Liste, Python'da birden fazla öğeyi bir arada saklamak için kullanılan bir veri yapısıdır. 
 # Listeler, sıralı ve değiştirilebilir (mutable) veri tipleridir. Farklı veri tiplerini bir arada barındırabilirler.
+# Listeler, köşeli parantez [] kullanılarak tanımlanır.
 
 # Python'da Liste Tanımlama
 liste1 = [1, 2, 3, 4, 5]  # Tam sayılardan oluşan bir liste
@@ -17,9 +18,22 @@ print("Boş Liste:", liste4)
 
 
 
+# Stringi Listeye Dönüştürme
+string = "Python"
+string_to_list = list(string)
+print("String'den Listeye Dönüştürülmüş Hali:", string_to_list)
+
+
+
+# Stringi Belirli Bir Ayırıcıya Göre Bölme
+str = "Range Rover, Rolls Royce"
+result = str.split(",")
+print("String'i Virgüle Göre Bölünmüş Hali:", result)
+
+
+
 # Liste Elemanlarına Erişim
 # Listeler sıralı olduğundan, her bir elemana indeks ile erişebiliriz. İndeksler 0'dan başlar.
-
 ilk_eleman = liste1[0]  # İlk eleman
 son_eleman = liste2[-1]  # Son eleman
 
@@ -34,7 +48,7 @@ print("Liste1'in Dilimlenmiş Hali:", alt_liste)
 
 
 
-# Listelerde Eleman Değiştirme
+# Listelerde Eleman Değiştirme- Liste Elemanlarını Güncelleme
 liste1[0] = 10  # İlk elemanı 10 ile değiştirme
 print("Liste1'in Güncellenmiş Hali:", liste1)
 
@@ -91,9 +105,15 @@ print("Sıralanmış Meyveler:", meyveler)
 
 
 
-# Listeleri Ters Çevirme
+# Listeleri Ters Çevirme (reverse)
 sayilar.reverse()
 print("Ters Çevrilmiş Sayılar:", sayilar)
+
+
+
+# Listeyi Sıralama ve Yeni Bir Listeye Döndürme (sorted)
+sorted_liste = sorted(liste2)
+print("Sıralanmış Liste2:", sorted_liste)
 
 
 
@@ -128,6 +148,37 @@ print("Liste2'nin Uzunluğu:", liste_uzunlugu)
 
 
 
-# Listeyi Tekrarlama (Repetition)
+# Listeyi Tekrarlama-Çoğaltma (Repetition)
 tekrar_liste = liste2 * 3
 print("Tekrarlanmış Liste:", tekrar_liste)
+
+
+# Nested Lists (İç İçe Listeler)
+nested_list = [1, 2, [3, 4], 5]
+print("İç İçe Liste:", nested_list)
+print("İç İçe Liste'nin 3. Elemanı:", nested_list[2])
+print("İç İçe Liste'nin 3. Elemanının 2. Elemanı:", nested_list[2][1])
+
+
+
+# Liste ile Değişken Atama (Unpacking)
+meyve_listesi = ["ananas", "mango", "kivi"]
+meyve1, meyve2, meyve3 = meyve_listesi
+print("Meyve 1:", meyve1)
+print("Meyve 2:", meyve2)
+print("Meyve 3:", meyve3)
+
+
+
+# Liste ile Değişkenlerin Değerlerini Değiştirme
+a = 5
+b = 10
+print("a ve b'nin Değerleri (Önce):", a, b)
+a, b = b, a
+print("a ve b'nin Değerleri (Sonra):", a, b)
+
+# List Comprehension
+# List comprehension, kısa ve öz bir şekilde liste oluşturmayı sağlar.
+# Örnek: 0'dan 9'a kadar olan sayıların karesini içeren bir liste oluşturma
+kareler = [x**2 for x in range(10)]
+print("Kareler Listesi:", kareler)
