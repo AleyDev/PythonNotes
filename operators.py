@@ -41,31 +41,31 @@ a = 10
 print("Atama:", a)  # Çıktı: 10
 
 # Toplama ve Atama Operatörü (+=): Sağdaki değeri soldaki değişkene ekleyip sonucu soldaki değişkene atar.
-a += 5
+a += 5   # a = a + 5
 print("Toplama ve Atama:", a)  # Çıktı: 15
 
 # Çıkarma ve Atama Operatörü (-=): Sağdaki değeri soldaki değişkenden çıkarıp sonucu soldaki değişkene atar.
-a -= 3
+a -= 3    # a = a - 3
 print("Çıkarma ve Atama:", a)  # Çıktı: 12
 
 # Çarpma ve Atama Operatörü (*=): Sağdaki değeri soldaki değişkenle çarpıp sonucu soldaki değişkene atar.
-a *= 2
+a *= 2    # a = a * 2
 print("Çarpma ve Atama:", a)  # Çıktı: 24
 
 # Bölme ve Atama Operatörü (/=): Sağdaki değeri soldaki değişkene böler ve sonucu soldaki değişkene atar.
-a /= 4
+a /= 4    # a = a / 4
 print("Bölme ve Atama:", a)  # Çıktı: 6.0
 
 # Tam Bölme ve Atama Operatörü (//=): Sağdaki değeri soldaki değişkene böler ve sonucu tam sayı olarak soldaki değişkene atar.
-a //= 2
+a //= 2    # a = a // 2
 print("Tam Bölme ve Atama:", a)  # Çıktı: 3.0
 
 # Mod Alma ve Atama Operatörü (%=): Sağdaki değeri soldaki değişkene böler ve kalan değeri soldaki değişkene atar.
-a %= 2
+a %= 2    # a = a % 2
 print("Mod Alma ve Atama:", a)  # Çıktı: 1
 
 # Üs Alma ve Atama Operatörü (**=): Sağdaki değeri soldaki değişkenin kuvveti olarak alıp sonucu soldaki değişkene atar.
-a **= 3
+a **= 3   # a = a ** 3
 print("Üs Alma ve Atama:", a)  # Çıktı: 1
 
 
