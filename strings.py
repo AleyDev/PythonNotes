@@ -110,6 +110,7 @@ print("Birleştirilmiş Metin 2:",str_join1)
 metin = "Python Programlama Dili ve Python Kütüphaneleri"
 str_find = metin.find("Python") # Python ifadesini arıyoruz
 print("İlk 'Python' kelimesinin bulunduğu indeks: ", str_find) # Aranan ifadenin bulunduğu ilk indeksi çıktı olarak verir.: 0
+# find() ifadesi aranılan değeri bulamazsa, geriye -1 değeri döndürür.
 
 
 # Startswith: Bir string'in belirtilen bir karakter dizisi ile başlayıp başlamadığını kontrol eder.
