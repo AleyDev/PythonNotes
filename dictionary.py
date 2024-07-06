@@ -69,7 +69,9 @@ print("Şehir Silinmiş Sözlük 1:", sozluk1)
 sozluk1.clear()
 print("Tüm Elemanları Silinmiş Sözlük 1:", sozluk1)
 
-
+# popitem() metodu: Sözlüğe son eklenen elemanı siler
+sozluk1.popitem()
+print("Son Elemanı Silinmiş Sözlük 1:", sozluk1)
 
 # Dictionary Uzunluğu (Eleman Sayısı)
 sozluk2_uzunluk = len(sozluk2)
