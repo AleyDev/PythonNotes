@@ -17,6 +17,7 @@
 # Örnek: print('denem'e)  # Tırnak hatası SyntaxError oluşturur.
 
 
+
 # Hata Yönetimi (Error Handling):
 
 # Hata yönetimi, kodumuzda oluşabilecek hataları yakalayıp, bu hatalara uygun yanıtlar verebilmemizi sağlar.
@@ -36,6 +37,8 @@ except ValueError:
     # Eğer kullanıcı sayısal olmayan bir değer girerse, bu hata yakalanır ve kullanıcıya bilgi verilir.
     print('Hata: Lütfen geçerli bir sayı girin.')
 
+
+
 # Genel Hata Yakalama:
 # Eğer spesifik hataları yakalamak istemiyorsanız, genel anlamda tüm hataları yakalayabilirsiniz.
 try:
@@ -44,6 +47,25 @@ try:
     print(x / y)
 except:
     print('Hata: Bir şeyler yanlış gitti.')
+
+
+
+# Kullanıcıdan giriş alırken ve işlemler yaparken hata oluşursa, hatanın ne olduğunu da döndürebiliriz.
+try:
+    # Kullanıcıdan iki sayı girmesini isteriz.
+    x = int(input('x: '))
+    y = int(input('y: '))
+    # İlk sayıyı ikinci sayıya böleriz ve sonucu yazdırırız.
+    print(x / y)
+# Exception tüm hataları yakalar ve hata mesajını 'e' değişkenine atar.
+except Exception as e:
+    # Genel bir hata mesajı yazdırırız.
+    print("Hata: Bir şeyler ters gitti.")
+    # Yakalanan hatanın detaylarını yazdırırız.
+    # Bu hata detayları, hangi tür hatanın oluştuğunu ve hata mesajını içerir.
+    print(e)
+
+
 
 # else Bloğu Kullanımı:
 # Hata oluşmadığında çalışacak bir blok eklemek için else kullanabiliriz.
@@ -56,6 +78,8 @@ except:
 else:
     # Hata oluşmadığında bu blok çalışır.
     print('Her şey yolunda.')
+
+
 
 # Döngü İçinde Hata Yönetimi:
 # Hataları sürekli kontrol etmek için while döngüsü ile hata yönetimi yapabiliriz.
@@ -70,6 +94,8 @@ while True:
     else:
         # Hata olmadığında döngüden çıkılır.
         break
+
+
 
 # finally Bloğu:
 # finally bloğu, hata oluşsa da oluşmasa da her zaman çalışır.
