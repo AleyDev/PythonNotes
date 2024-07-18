@@ -1,4 +1,5 @@
 # FOR LOOPS
+# Bir dizi (liste, tuple, string vb.) veya yineleyici üzerinde gezinerek her bir öğe için belirli bir kod bloğunu çalıştıran bir döngü yapısıdır.
 
 # Liste tanımlama
 numbers = [1, 2, 3, 4, 5]
