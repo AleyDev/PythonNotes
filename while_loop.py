@@ -1,4 +1,5 @@
 # WHİLE LOOPS
+# Belirli bir koşul doğru olduğu sürece kod bloğunu tekrar tekrar çalıştıran bir döngü yapısıdır
 
 # 1'den 100'e kadar olan sayıları ekrana yazdırma
 x = 0
