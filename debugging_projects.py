@@ -65,3 +65,53 @@ myClass = MyClass()
 # myClass nesnesinin printSomething metodu çağrılıyor.
 # Bu metod "python" mesajını yazdırır.
 myClass.printSomething()
+
+
+
+"""
+Breakpoint kullanımı için 'pdb'de kullanılabilir. Örnek:
+
+import pdb
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def increaseAge(self):
+        pdb.set_trace()  # Burada breakpoint koyarak yaşın arttığı noktayı inceleyebilirsiniz.
+        self.age += 1
+
+    def decreaseAge(self):
+        if self.age > 0:
+            pdb.set_trace()  # Burada breakpoint koyarak yaşın azaldığı noktayı inceleyebilirsiniz.
+            self.age -= 1
+
+    def __str__(self):
+        return f"{self.name} is {self.age} years old!"
+
+aley = Person("aley", 5)
+
+aley.decreaseAge()
+aley.decreaseAge()
+aley.decreaseAge()
+aley.decreaseAge()
+aley.decreaseAge()
+aley.decreaseAge()
+
+print(aley)
+
+class MyClass:
+    def __init__(self):
+        print("initialized")
+
+    def printSomething(self):
+        pdb.set_trace()  # Burada breakpoint koyarak bu metodun çağrıldığı ve "python" mesajının yazdırıldığı noktayı inceleyebilirsiniz.
+        print("python")
+
+myClass = MyClass()
+myClass.printSomething()
+
+
+
+"""
